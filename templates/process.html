@@ -1,0 +1,31 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+    <ul id="users">
+      {% for user in users %}
+      <li>
+        <h3>{{user.first_name}} {{user.last_name}}</h3> 
+        <table id="user-status-{{user.id}}" class="table table-bordered table-striped responsive-utilities">
+          <tr>
+            <th class="service">Service</th>
+            <th class="status">Status</th>
+          </tr>
+          <tr class="onelogin">
+            <td>One Login</td>
+            <td class="status"><div class="status pending"></div></td>
+          </tr>
+          <tr class="google">
+            <td>Google Apps</td>
+            <td class="status"><div class="status pending"></div></td>
+          </tr>
+          <tr classa="yammer">
+            <td>Yammer</td>
+            <td class="status"><div class="status pending"></div></td>
+          </tr>
+        </table>
+      </li>
+      {% endfor %}
+    </ul>
+
+{% endblock %}

@@ -1,0 +1,65 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+  <h2>New Hire Information</h2>
+
+  <!--<img src="../static/img/yamarrr.png" width="374" height="69" alt="Yamarrr!" />-->
+
+  <div class="alert alert-success hide">The user was added successfully.</div>
+  <div class="alert alert-error hide">You failed to add the user.</div>
+
+  <form action="/" method="POST" id="addUser" name="addUser">
+    <table>
+      <tr>
+        <td><label for="firstName">First Name</label></td><td><input id="firstName" name="firstName" type="text" class="required" /></td>
+      </tr>
+      <tr>
+        <td><label for="middleInitial">Middle Initial</label></td><td><input id="middleInitial" name="middleInitial" type="text" maxlength="1" /></td>
+      </tr>
+      <tr>
+        <td><label for="lastName">Last Name</label></td><td><input id="lastName" name="lastName" type="text" class="required" /></td>
+      </tr>
+      <tr>
+        <td><label for="location">Location</label></td>
+        <td>
+          <select name="location" id="location">
+            <option value="1" selected="selected">San Francisco</option>
+            <option value="2">London</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="teamName">Team</label></td>
+        <td>
+          <select name="teamName" id="teamName">
+            <option value="1" selected="selected">Engineering</option>
+            <option value="2">Sales</option>
+            <option value="3">Marketing</option>
+            <option value="4">Contractors</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td><label for="personalEmail">Personal Email</label></td><td><input id="personalEmail" name="personalEmail" type="text" class="required email" /></td>
+     </tr>
+	<tr>
+		<td><label for="earlyAccess">Early Email?</label></td>
+		<td>
+			<input name="earlyAccess" type="checkbox" id="earlyAccess" value="Yes" />
+		</td>
+	</tr>
+	<tr id="ndaRow">
+		<td><label for="nda">NDA?</label></td>
+		<td>
+			  <input name="nda" type="checkbox" id="nda" value="Yes" />
+		</td>
+	</tr>
+  </table>
+  <div id="submission">
+    <button class="btn btn-primary">Add User</button>
+    <input class="btn btn-warning" type="reset" />
+  </div>
+  </form>
+
+{% endblock %}

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<<<<<<< HEAD
+  <form action="/api_process" method="POST">
+=======
+  <form action="/process" method="POST">
+>>>>>>> dde37d8abd81d4d505dce7173a5522a88f77cd0c
+    <div id="process-actions">
+      <button class="btn btn-primary">Process Users</button>
+    </div>
+  </form>
+
+  <table id="process" class="table table-bordered table-striped responsive-utilities">
+    <tr>
+      <th class="user">User</th>
+      <th class="select"></th>
+    </tr>
+<<<<<<< HEAD
+    {% for user in users %}
+      <tr>
+        <td>{{ user.first_name }} {{ user.last_name }}</td>
+        <td><input type="checkbox" value="{{ user.id }}" checked="true" /></td>
+      </tr>
+    {% endfor %}
+=======
+    <tr>
+      <td>John Doe</td>
+      <td><input type="checkbox" checked="true" /></td>
+    </tr>
+>>>>>>> dde37d8abd81d4d505dce7173a5522a88f77cd0c
+  </table>
+
+{% endblock %}
+

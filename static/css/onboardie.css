@@ -1,0 +1,110 @@
+body {
+  /*padding: 60px 20px 10px 20px;*/
+}
+
+div.container,
+.navbar .container {
+  width: 940px;
+}
+
+ul, li {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+#myModal .progress {
+  margin: 0 15px;
+}
+
+.navbar {
+  /*
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  */
+}
+
+.navbar-inner {
+  border-radius: 0;
+}
+
+form table input,
+form table label{
+  float: left;
+  margin-right: 10px;
+}
+
+form table input#middleInitial {
+  width: 20px;
+}
+
+#ndaRow {
+  display: none;
+}
+
+form #submission {
+  margin-left: 190px;
+  width: 150px;
+}
+
+.question {
+  font-style: italic;
+}
+
+input[type=reset] {
+  float: none;
+}
+
+input[type=radio] {
+  margin-right: 5px;
+}
+
+form label{
+  padding-right: 10px;
+}
+
+form button.btn, form input {
+	display: inline;
+}
+
+form button{
+
+}
+
+label.error {
+  color: #bd1a00;
+}
+
+th.status, td.status {
+  width: 20px;
+  text-align: center;
+}
+
+div.status {
+  background: red;
+  width: 16px;
+  height: 16px;
+  margin: 0 auto;
+}
+
+div.status.pending {
+  background: url('../img/ajax-loader.gif');
+}
+
+div.status.success {
+  background: green;
+}
+
+#process-actions {
+  margin-bottom: 10px;
+}
+
+#process th.select {
+  width: 20px;
+}

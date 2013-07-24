@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+<img src="/static/img/yamarrr.png" width="374" height="69" alt="Yamarrr!" />
+<p>Yamarrr + provisionie</p>
+<form id="provisionie" name="provisionie" onsubmit="return validateForm()" method="post" action="URL">
+  <p>First Name:
+    <label for="firstName"></label>
+    <input type="text" name="firstName" id="firstName" />
+  </p>
+  <p>Last Name:
+    <label for="lastName"></label>
+    <input type="text" name="lastName" id="lastName" />
+  </p>
+  <p>Team:
+    <label for="teamName"></label>
+    <select name="teamName" id="teamName">
+<option value="engineering">Engineering</option>
+<option value="sales">Sales</option>
+      <option value="marketing">Anything else</option>
+      <option value="email">Contractor</option>
+    </select>
+  </p>
+  <p>Personal email address:  
+    <label for="personalEmail"></label>
+    <input type="text" name="personalEmail" id="personalEmail" />
+  </p>
+  <p>Has confidentiality agreement been signed and received? 
+    <input name="radio" type="radio" id="nda" value="ndaYes" checked="checked" />
+    <label for="nda"></label>
+    Yes
+    <input name="radio" type="radio" id="nda2" value="ndaNo" />
+    <label for="nda2"></label>
+  No </p>
+<p>Provide with early access? An email will be sent to their personal email address.
+  <input name="earlyAccess" type="checkbox" id="earlyAccess" value="Yes" />
+</p>
+<p>
+  <input type="submit" name="submit" id="submit" value="Submit" />
+  <label for="earlyAccess"></label>
+  <input type="reset" name="clear" id="clear" value="Reset" />
+</p>
+</form>
